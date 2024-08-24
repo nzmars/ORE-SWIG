@@ -67,6 +67,10 @@ include_directories(${Python_INCLUDE_DIRS})
 
 # Add to the list of link directories
 link_directories(${Python_LIBRARY_DIRS})
+if(DEFINED ORE_LIB_DIR)
+  message(STATUS  "---------- add_link_directory(ORE_LIB_DIR = ${ORE_LIB_DIR})")
+  add_link_directory_if_exists(${ORE_LIB_DIR})
+endif()
 add_link_directory_if_exists(${ORE_BUILD}/QuantLib/ql)
 add_link_directory_if_exists(${ORE_BUILD}/QuantExt/qle)
 add_link_directory_if_exists(${ORE_BUILD}/OREData/ored)

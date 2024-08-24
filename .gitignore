@@ -228,3 +228,10 @@ ipch/
 
 *log.txt
 *.dat
+
+
+###########################
+# Develop branch
+###########################
+*egg-info*
+CMakeFiles

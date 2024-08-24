@@ -294,7 +294,9 @@ qle_export_xibor_instance(DKKCibor);
 qle_export_xibor_instance(HKDHibor);
 qle_export_xibor_instance(HUFBubor);
 qle_export_xibor_instance(IDRIdrfix);
+qle_export_xibor_instance(IDRJibor);
 qle_export_xibor_instance(INRMifor);
+qle_export_xibor_instance(KRWCd);
 qle_export_xibor_instance(KRWKoribor);
 qle_export_xibor_instance(MXNTiie);
 qle_export_xibor_instance(MYRKlibor);
@@ -305,16 +307,22 @@ qle_export_xibor_instance(SEKStibor);
 qle_export_xibor_instance(SGDSibor);
 qle_export_xibor_instance(SGDSor);
 qle_export_xibor_instance(SKKBribor);
+qle_export_xibor_instance(SofrTerm);
+qle_export_xibor_instance(SoniaTerm);
 qle_export_xibor_instance(THBBibor);
 qle_export_xibor_instance(TWDTaibor);
 
 qle_export_overnight_instance(BRLCdi);
+qle_export_overnight_instance(CHFSaron);
 qle_export_overnight_instance(CHFTois);
 qle_export_overnight_instance(CLPCamara);
 qle_export_overnight_instance(COPIbr);
 qle_export_overnight_instance(CORRA);
 qle_export_overnight_instance(DKKOis);
+qle_export_overnight_instance(HKDHonia);
 qle_export_overnight_instance(SEKSior);
+qle_export_overnight_instance(Sora);
 qle_export_overnight_instance(Tonar);
+qle_export_overnight_instance(THBThor);
 
 #endif
