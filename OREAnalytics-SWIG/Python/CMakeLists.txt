@@ -65,6 +65,10 @@ include_directories(SYSTEM ${ORE}/OREAnalytics)
 include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
 include_directories(SYSTEM ${Python_INCLUDE_DIRS})
 
+# if(NOT MSVC)
+#   add_compile_options(-flarge-source-files)
+# endif()
+
 # Add to the list of link directories
 link_directories(${Python_LIBRARY_DIRS})
 if(DEFINED ORE_LIB_DIR)
