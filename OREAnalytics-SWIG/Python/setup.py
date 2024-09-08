@@ -106,10 +106,12 @@ class my_build_ext(build_ext):
     def initialize_options(self):
         build_ext.initialize_options(self)
         self.static = None
-    def get_var(self, v):
+    def get_var(self, v, defaultval=None):
         if v in os.environ:
             return os.getenv(v)
         else:
+            if defaultval:
+                return defaultval
             raise Exception("Environment variable {} not set".format(v))
     def validate_path(self, p):
         if os.path.exists(p):
@@ -149,6 +151,8 @@ class my_build_ext(build_ext):
 
             if self.debug:
                 target = "Debug"
+            # for link directory
+            target = self.get_var('BUILD_TYPE', target)
 
             self.library_dirs.append(self.validate_path(BOOST_LIB))
 
